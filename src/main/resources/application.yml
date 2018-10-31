@@ -1,0 +1,14 @@
+server:
+  port: 7777
+  context-path: /scala-boot
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: mysql
+    url: jdbc:mysql://localhost:3306/scala_metadata_management?useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto:  update
+    database: mysql
